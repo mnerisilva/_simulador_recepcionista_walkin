@@ -17,48 +17,48 @@ valorMarginLeft.innerText = elem.style.marginLeft;
 
 cssObj = window.getComputedStyle(elem, null);
 
-
+let intervalo = [,200,400,600,800,1000,1200,1400,1600,1800,2000];
 
 setTimeout(() => {
     elem.style.marginLeft = -390+"px";
     valorMarginLeft.innerText = elem.style.marginLeft;
-}, 1000);
+}, intervalo[1]);
 setTimeout(() => {
     elem.style.marginLeft = -780+"px";
     valorMarginLeft.innerText = elem.style.marginLeft;
-}, 2000);
+}, intervalo[2]);
 setTimeout(() => {
     elem.style.marginLeft = -1164+"px";
     valorMarginLeft.innerText = elem.style.marginLeft;
-}, 3000);
+}, intervalo[3]);
 setTimeout(() => {
     elem.style.marginLeft = -1170+"px";
     valorMarginLeft.innerText = elem.style.marginLeft;
-}, 4000);
+}, intervalo[4]);
 setTimeout(() => {
     elem.style.marginLeft = -1560+"px";
     valorMarginLeft.innerText = elem.style.marginLeft;
-}, 5000);
+}, intervalo[5]);
 setTimeout(() => {
     elem.style.marginLeft = -1950+"px";
     valorMarginLeft.innerText = elem.style.marginLeft;
-}, 6000);
+}, intervalo[6]);
 setTimeout(() => {
     elem.style.marginLeft = -2340+"px";
     valorMarginLeft.innerText = elem.style.marginLeft;
-}, 7000);
+}, intervalo[7]);
 setTimeout(() => {
     elem.style.marginLeft = -2730+"px";
     valorMarginLeft.innerText = elem.style.marginLeft;
-}, 8000);
+}, intervalo[8]);
 setTimeout(() => {
     elem.style.marginLeft = -3120+"px";
     valorMarginLeft.innerText = elem.style.marginLeft;
-}, 9000);
+}, intervalo[9]);
 setTimeout(() => {
     elem.style.marginLeft = -3510+"px";
     valorMarginLeft.innerText = elem.style.marginLeft;
-}, 10000);
+}, intervalo[10]);
 
 
 /*for (i = 1;i = 11; i++){
