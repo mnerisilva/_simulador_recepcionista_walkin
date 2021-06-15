@@ -26,15 +26,23 @@ body {
 }
 
 .fundo-predio {
+    position:absolute;
 }
 
 .sprite-caminhada {
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /*width: 623px;*/
     width: 395px;
     overflow: hidden;
-    left: 10px;
-    border:maroon 5px solid;
+    z-index: 1;
+    position: absolute;
+    /*border:maroon 5px solid;*/
+}
+
+#sprite-caminhada {
+    left: 500px;
 }
 
 .sprite-caminhada img {

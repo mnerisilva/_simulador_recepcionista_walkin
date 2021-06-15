@@ -9,7 +9,10 @@ console.log('Working...');
 
 const sprite = document.querySelector(".sprite-caminhada img");
 
-var elem = document.getElementById("sprite");
+const sprite_caminhada = document.getElementById("sprite-caminhada");
+
+//var elem = document.getElementById("sprite");
+var elem = document.getElementById("sprite-caminhada");
 
 var valorMarginLeft = document.getElementById("valor-margin");
 
@@ -17,11 +20,25 @@ valorMarginLeft.innerText = elem.style.marginLeft;
 
 cssObj = window.getComputedStyle(elem, null);
 
-let intervalo = [,200,400,600,800,1000,1200,1400,1600,1800,2000];
+let intervalo = 1000;
 
+sprite_caminhada.style.left = 1000+"px";
 
+console.log('.... '+cssObj.left);
 
-for (i = 1;i < 6; i++){
+//let left = sprite_caminhada.style.left;
+//let top = sprite_caminhada.style.top;
+
+//console.log(left);
+//console.log(top);
+let valor = 500;
+let contador = 50;
+setInterval(() => {
+    sprite_caminhada.style.left = valor+contador+"px";
+    contador = contador + 50;
+}, intervalo);
+
+/*for (i = 1;i < 6; i++){
 
         setTimeout(() => {
             elem.style.marginLeft = -390+"px";
@@ -64,8 +81,8 @@ for (i = 1;i < 6; i++){
             valorMarginLeft.innerText = elem.style.marginLeft;
         }, intervalo[10]);
 
-        /* hhhhhhhh */
-
         console.log(i);
-}
+}*/
 console.log('margin-left: '+cssObj.marginLeft);
+console.log('left: '+cssObj.left);
+console.log('top: '+cssObj.top);
