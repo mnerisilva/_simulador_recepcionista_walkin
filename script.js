@@ -33,12 +33,14 @@ console.log('.... '+cssObj.left);
 //console.log(top);
 let valorLeft = parseInt(cssObj.left);
 let valorTop = parseInt(cssObj.top);
-let contador = 50;
+let contador1 = 50;
+let contador2 = 10;
 let loopingSprite = setInterval(() => {
-    sprite_caminhada.style.left = valorLeft+contador+"px";
-    sprite_caminhada.style.top = valorTop+contador+"px";
-    contador = contador + 50;
-    if(contador > 500){
+    sprite_caminhada.style.left = valorLeft+contador1+"px";
+    sprite_caminhada.style.top = valorTop+contador2+"px";
+    contador1 = contador1 + 50;
+    contador2 = contador2 + 10;
+    if(contador1 > 300){
         clearInterval(loopingSprite);
     }
 }, intervalo);
