@@ -64,6 +64,8 @@ for (i = 1;i < 6; i++){
             valorMarginLeft.innerText = elem.style.marginLeft;
         }, intervalo[10]);
 
+        /* hhhhhhhh */
+
         console.log(i);
 }
 console.log('margin-left: '+cssObj.marginLeft);
