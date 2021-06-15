@@ -20,9 +20,9 @@ valorMarginLeft.innerText = elem.style.marginLeft;
 
 cssObj = window.getComputedStyle(elem, null);
 
-let intervalo = 1000;
+let intervalo = 800;
 
-sprite_caminhada.style.left = 1000+"px";
+//sprite_caminhada.style.left = 1000+"px";
 
 console.log('.... '+cssObj.left);
 
@@ -31,11 +31,16 @@ console.log('.... '+cssObj.left);
 
 //console.log(left);
 //console.log(top);
-let valor = 500;
+let valorLeft = parseInt(cssObj.left);
+let valorTop = parseInt(cssObj.top);
 let contador = 50;
-setInterval(() => {
-    sprite_caminhada.style.left = valor+contador+"px";
+let loopingSprite = setInterval(() => {
+    sprite_caminhada.style.left = valorLeft+contador+"px";
+    sprite_caminhada.style.top = valorTop+contador+"px";
     contador = contador + 50;
+    if(contador > 500){
+        clearInterval(loopingSprite);
+    }
 }, intervalo);
 
 /*for (i = 1;i < 6; i++){
