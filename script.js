@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         cssObj = window.getComputedStyle(elem, null);
 
+        let recepcao = document.querySelector(".recepcao-hotel");
+
         let intervalo = 800;
 
         //sprite_caminhada.style.left = 1000+"px";
@@ -28,6 +30,10 @@ document.addEventListener("DOMContentLoaded", function() {
             ease: "none",
             repeat: 0
         });
+
+        setInterval(function(){
+            recepcao.style.display = "block";
+        }, 5000);
 
         //let left = sprite_caminhada.style.left;
         //let top = sprite_caminhada.style.top;

@@ -73,3 +73,7 @@ body {
 .tela img {
     /*position:absolute;*/
 }
+
+.recepcao-hotel {
+    display: none;
+}
