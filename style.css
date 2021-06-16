@@ -17,12 +17,14 @@ body {
     align-items: center;
     height: 100vh;
     width: 100vw;
+    background-color: #859e9edb;
 }
 
 .cena-1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .fundo-predio {
@@ -36,15 +38,38 @@ body {
     /*width: 623px;*/
     width: 395px;
     overflow: hidden;
-    z-index: 1;
+    z-index: 1 !important;
     position: absolute;
     /*border:maroon 5px solid;*/
 }
 
 #sprite-caminhada {
-    left: 500px;
+    left: -850px;
 }
 
 .sprite-caminhada img {
     /*margin-left: 1px;*/
+    z-index: 1 !important;
+}
+
+.moldura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tela {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 700px;
+    overflow: hidden;
+    /*border: solid 1px red;*/
+    background-color: #86c7dc;
+    z-index: 100 !important;
+}
+
+.tela img {
+    /*position:absolute;*/
 }

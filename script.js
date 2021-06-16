@@ -21,12 +21,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
         console.log('.... '+cssObj.left);
 
+        gsap.to("#sprite-caminhada",{
+            duration: 5,
+            x: 400,
+            y: 90,
+            ease: "none",
+            repeat: 0
+        });
+
         //let left = sprite_caminhada.style.left;
         //let top = sprite_caminhada.style.top;
 
         //console.log(left);
         //console.log(top);
-        let valorLeft = parseInt(cssObj.left);
+        /*let valorLeft = parseInt(cssObj.left);
         let valorTop = parseInt(cssObj.top);
         let contador1 = 50;
         let contador2 = 10;
@@ -47,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         console.log('margin-left: '+cssObj.marginLeft);
         console.log('left: '+cssObj.left);
-        console.log('top: '+cssObj.top);
+        console.log('top: '+cssObj.top);*/
 
 
 
