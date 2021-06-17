@@ -17,6 +17,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
         cssObj = window.getComputedStyle(elem, null);
 
+        let audio_passos = document.querySelector('audio')
+
+        audio_passos.play();
+
         let intervalo = 800;
 
         //sprite_caminhada.style.left = 1000+"px";
@@ -33,7 +37,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
         setInterval(function(){
-            cena_2.classList.add("mostrar");
+            cena_2.classList.add("mostrar-cena-2");
+            setInterval(function(){
+                gsap.to(".img-recepcao",{
+                    duration: 5,
+                    x: 670,
+                    y: 1,
+                    repeat: 0
+                });
+            },2000);
         },5300);
         
 

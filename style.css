@@ -79,6 +79,12 @@ body {
     left: -600px;
 }
 
+.cena-2 img {
+    top: -320px;
+    left: -800px;
+    position: absolute;
+}
+
 .recepcao-hotel {
     position: absolute;
 }
@@ -90,7 +96,7 @@ body {
     position: absolute;
 }
 
-.mostrar {
+.mostrar-cena-2 {
     transition: opacity .8s;
     z-index: 20;
     opacity: 1;
