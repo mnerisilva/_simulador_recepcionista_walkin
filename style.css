@@ -38,10 +38,7 @@ body {
     align-items: center;
     /*width: 623px;*/
     width: 395px;
-    overflow: hidden;
-    z-index: 1 !important;
     position: absolute;
-    /*border:maroon 5px solid;*/
 }
 
 #sprite-caminhada {
@@ -49,8 +46,6 @@ body {
 }
 
 .sprite-caminhada img {
-    /*margin-left: 1px;*/
-    z-index: 1 !important;
 }
 
 .moldura {
@@ -78,4 +73,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
+    position: relative;
+    opacity: 0;
+    left: -600px;
+}
+
+.recepcao-hotel {
+    position: absolute;
+}
+
+.fundo-branco {
+    width: 900px;
+    height: 700px;
+    background-color: #86c7dc;
+    position: absolute;
+}
+
+.mostrar {
+    transition: opacity .8s;
+    z-index: 20;
+    opacity: 1;
 }

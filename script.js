@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const sprite_caminhada = document.getElementById("sprite-caminhada");
 
+        let cena_2 = document.querySelector(".cena-2");
+
         var elem = document.getElementById("sprite-caminhada");
 
         var valorMarginLeft = document.getElementById("valor-margin");
@@ -28,6 +30,11 @@ document.addEventListener("DOMContentLoaded", function() {
             ease: "none",
             repeat: 0
         });
+
+
+        setInterval(function(){
+            cena_2.classList.add("mostrar");
+        },5300);
         
 
         //let left = sprite_caminhada.style.left;
