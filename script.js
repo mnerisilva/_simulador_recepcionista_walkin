@@ -9,15 +9,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
         let cena_2 = document.querySelector(".cena-2");
 
-        var elem = document.getElementById("sprite-caminhada");
+        let elem = document.getElementById("sprite-caminhada");
 
-        var valorMarginLeft = document.getElementById("valor-margin");
+        let valorMarginLeft = document.getElementById("valor-margin");
 
         valorMarginLeft.innerText = elem.style.marginLeft;
 
         cssObj = window.getComputedStyle(elem, null);
 
-        let audio_passos = document.querySelector('audio')
+        let param = new Date().getTime();
+
+        let audio_passos = document.querySelector('audio');
+
+        audio_passos.removeAttribute('src');
+
+        audio_passos.setAttribute('src','audios/footsteps_in_the_street.mp3?'+param);
 
         audio_passos.play();
 
